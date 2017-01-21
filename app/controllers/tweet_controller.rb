@@ -5,7 +5,7 @@ class TweetController < ApplicationController
   end
 
   get '/tweets' do
-    if !User.is_logged_in?(session)
+    if User.logged_in?(session) == false
       redirect '/signup'
     else 
      erb :'/tweets/show_tweet'
