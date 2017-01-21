@@ -5,7 +5,7 @@ module Helpers
     @real_user = User.find_by(sessions[:user_id])
   end
 
-  def is_logged_in?(sessions)
+  def logged_in?(sessions)
     !!sessions[:user_id]
   end
 
