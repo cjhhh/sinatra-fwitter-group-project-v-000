@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   has_many :tweets
 
   extend Slug::ClassMethods
+  extend Helpers::ClassMethods
   include Slug::InstanceMethods
 
 end
