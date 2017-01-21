@@ -1,5 +1,6 @@
 class UserController < ApplicationController
 
+#change 
   get '/signup' do
     if !User.is_logged_in?(session)
      erb :'/users/create_user'
